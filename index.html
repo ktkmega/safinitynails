@@ -4,10 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Safinity Nails</title>
+
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
   <style>
     body {
       background-color: #f8c0d5;
-      font-family: 'Arial', sans-serif;
+      font-family: 'Poppins', sans-serif;
       margin: 0;
       padding: 0;
       text-align: center;
@@ -18,40 +22,55 @@
       margin: 0 auto;
       padding: 40px 20px;
     }
-    img.profile-pic {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
+    img.logo {
+      width: 160px;
+      height: auto;
       margin-bottom: 30px;
-      border: 4px solid white;
+      border-radius: 20px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
     h1 {
       font-size: 28px;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
     a.button {
       display: block;
       margin: 15px auto;
       padding: 14px 25px;
       font-size: 18px;
+      font-weight: 600;
       color: white;
       background-color: #d14e83;
       text-decoration: none;
       border-radius: 8px;
       width: 80%;
       max-width: 300px;
-      transition: background-color 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    a.button::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.2);
+      transition: left 0.4s ease;
     }
     a.button:hover {
       background-color: #b94071;
+      transform: scale(1.02);
+    }
+    a.button:hover::after {
+      left: 100%;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <img class="profile-pic" src="https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/6b1e27fce2e82313525c6ecd6fcd163a~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=14579&refresh_token=37e80bb6&x-expires=1749207600&x-signature=srjDeCeRswoq%2FoQVsv5dC2DeKzw%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=maliva">
+    <img class="logo" src="https://i.ibb.co/k2YBWqMS/6b1e27fce2e82313525c6ecd6fcd163a-tplv-tiktokx-cropcenter10801080.jpg" alt="Safinity Nails Logo">
     
     <h1>Safinity Nails</h1>
     
